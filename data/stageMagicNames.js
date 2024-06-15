@@ -9,4 +9,4 @@ const femaleFirstNames = [
   "Nanduria", "Prima", "Rohalia", "Saphira", "Spectacula", "Xeledonie", "Zhayade"
 ];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames};
+module.exports = { maleFirstNames, femaleFirstNames};
