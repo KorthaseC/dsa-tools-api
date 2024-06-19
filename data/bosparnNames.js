@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Albinus", "Andronicus", "Areus", "Arn", "Astagius", "Aurentian", "Avenius", "Balbus", "Balphemor", "Basilius", 
   "Belenus", "Belen", "Boronus", "Bosper", "Brajan(us)", "Brazarikus", "Brigonius", "Brigon", "Bundinus", "Caio", 
@@ -13,6 +14,7 @@ const maleFirstNames = [
   "Voltan", "Xaverius", "Yarum", "Yarindarius", "Yarindar", "Yulag", "Zirrakion"
 ];
 
+//prettier-ignore
 const femaleFirstNames = [
   "Aemilia", "Amara", "Antigia", "Arcadia", "Arvil", "Asmodena", "Asma", "Bethana", "Borondria", "Bospara", "Celadra", 
   "Celestia", "Celissa", "Lissa", "Cervilia", "Charissa", "Clodicea", "Crabroda", "Cusmara", "Cussima", "Dalida", 
@@ -26,20 +28,28 @@ const femaleFirstNames = [
   "Vi", "Xaviera", "Yaguita", "Ypraella"
 ];
 
+//prettier-ignore
 const lastNames = [
   "Arponia", "Berlinghan", "Blabudao", "Caerodaa", "Caervinus", "Castelus", "Casteusius", "Cordovan", "Darbonius", 
   "Drusus", "Galahan", "Karsidian", "Nivelar", "Rantiguus", "Soveranus", "Sylvatica", "Yaquira", "Zertoba"
 ];
 
+//prettier-ignore
 const nobleNames = [
   "Aemiler", "Andronic", "Beater", "Celarier", "Celivier", "Fluvier", "Galduiler", "Galener", "Liphisier", 
   "Loretter", "Memnusier", "Raneer", "Simener", "Valerier", "Varener", "Veneter"
 ];
 
-const patroynymics = [
-  "Aldein", "Amhall", "Arivor", "Avestum", "Balurium", "Bardonium", "Belenas", "Belhanka", "Bethana", "Bosparan", 
-  "Brabaca", "Corapia", "Cusilicum", "Despiona", "Garetha", "Granpiora", "Methumis", "Methumisia", "Omlatia", 
-  "Porta Yaquiris", "Puninum", "Ragathum", "Yaquirath"
-];
+const regionSpecifics = {
+  hasGenderSpecificLastName: false,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: false,
+  hasNoLastName: false,
+  hasNoble: true,
+  hasNoblePrefix: false,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames, patroynymics };
+module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames, regionSpecifics };

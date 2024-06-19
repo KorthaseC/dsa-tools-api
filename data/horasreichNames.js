@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Abelmir", "Adamo", "Aldorn", "Aldo", "Alesandro", "Allrico", "Alviero", "Almodio", "Arbos", "Argelione", "Arion", 
   "Aristo", "Arn", "Ascanio", "Aurelian", "Bardo", "Basilius", "Bembo", "Benvenuto", "Boranfer", "Bragon", "Bren", 
@@ -15,6 +16,7 @@ const maleFirstNames = [
   "Varsinian", "Vassel", "Vermis", "Vicino", "Vilate", "Xeranio", "Yarum", "Yerno", "Yulio", "Zadalon", "Zandor", "Zordan"
 ];
 
+//prettier-ignore
 const femaleFirstNames = [
   "Adamante", "Adaque", "Ada", "Afiniga", "Afjalea", "Ainada", "Alanda", "Alane", "Alaine", "Amazella", "Ambrassa", 
   "Amene", "Amine", "Amarelle", "Anais", "Andara", "Andra", "Andria", "Aneirin", "Anghessa", "Aniel", "Anivania", 
@@ -35,6 +37,7 @@ const femaleFirstNames = [
   "Zryasa"
 ];
 
+//prettier-ignore
 const lastNames = [
   "Agricola", "Aldubhor", "Altrovis", "Angussiola", "Anzani", "Arbalista", "Arsago", "Ballurat", "Barberigo", 
   "Berylli", "Bibiena", "Boccalino", "Bomarzo", "Bossvani", "Botta", "Bresefinck", "Bronzino", "Broock", "Buffarsis", 
@@ -53,6 +56,7 @@ const lastNames = [
   "Westerfolden", "Willant", "Zampatte", "Zopping", "Zuberthin"
 ];
 
+//prettier-ignore
 const nobleNames = [
   "Aralzin", "ash Manek", "ay Oikaldiki", "Berlinghân", "da Malagreia", "della Giudice", "della Tegalliani", "della Trezzi", 
   "della Turani", "di Balligur", "di Bellafoldi", "di Camaro", "di Matienna", "Dorn", "Firdayon", "Firdayon-Bethana", 
@@ -60,4 +64,43 @@ const nobleNames = [
   "von Malur", "von Radoleth", "von Thegûn", "von Veliris", "von Costermana"
 ];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames };
+//prettier-ignore
+const lastNamesPrefix = [ "da ", "de ", "di ", "della ", "delli ", "ay ", "du ", "ash ", "ter " ];
+
+const lastNamesMalePrefix = lastNamesPrefix;
+
+const lastNamesFemalePrefix = lastNamesPrefix;
+
+const maleLastNames = lastNames;
+
+const femaleLastNames = lastNames;
+
+//prettier-ignore
+const lastNamesPrefixNoble = [ "da ", "de ", "di ", "della ", "delli ", "ay ", "du ", "ash ", "ter ", "ya " ];
+
+const regionSpecifics = {
+  hasGenderSpecificLastName: true,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: true,
+  hasNoLastName: false,
+  hasNoble: true,
+  hasNoblePrefix: true,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: true,
+  hasClanNames: false,
+};
+
+module.exports = {
+  maleFirstNames,
+  femaleFirstNames,
+  lastNames,
+  nobleNames,
+  lastNamesMalePrefix,
+  lastNamesFemalePrefix,
+  maleLastNames,
+  femaleLastNames,
+  lastNamesPrefixNoble,
+  regionSpecifics,
+};
+
+//mehrere Vornamen

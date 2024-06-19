@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Anargh", "Anchas", "Artach", "Balfoch", "Bartakh", "Barwad", "Bearach", "Bradruch", "Braighdan", "Branchan", 
   "Branduch", "Breac", "Brein", "Caerfynh", "Cainncoh", "Cammur(r)", "Cainu", "Cormach", "Daragh", "Derwoth", "Druan", 
@@ -8,6 +9,7 @@ const maleFirstNames = [
   "Wuran", "Yahrad", "Yarrodh", "Yorged", "Yuchdan", "Yurrgold"
 ];
 
+//prettier-ignore
 const femaleFirstNames = [
   "Aesa", "Andraga", "Aruleyd", "Bebann", "Blöt(ulind)", "Borrgach", "Brona", "Brucha", "Caltha", "Cirnach", "Corrja",
   "Dairdra", "Danduna", "Dunyabra", "Durrcha", "Eimri(d)", "Frunira", "Froya", "Gardrha", "Gharya", "Gjayka", "Grainne",
@@ -18,11 +20,41 @@ const femaleFirstNames = [
   "Zurakka"
 ];
 
+//prettier-ignore
 const lastNames = [
-  "Alrudh", "Dhartaech", "Lyrgach", "Mortakh", "Nielllyn", "Rayyadh", "Arryach-Mûr", "Benbhalûr", "Benskôth", 
-  "Cregg-Yôlir", "Ishtar-Barr", "Oshthar-Sloch"
+  "vom Alrudh", "vom Dhartaech", "vom Lyrgach", "vom Mortakh", "vom Nielllyn", "vom Rayyadh", "vom Arryach-Mûr", "vom Benbhalûr", "vom Benskôth", 
+  "vom Cregg-Yôlir", "vom Ishtar-Barr", "vom Oshthar-Sloch"
 ];
 
-const nobleNames = [];
+const lastNamesMalePrefix = ["bren "];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames };
+const lastNamesFemalePrefix = ["brai "];
+
+const maleLastNames = maleFirstNames;
+
+const femaleLastNames = femaleFirstNames;
+
+const regionSpecifics = {
+  hasGenderSpecificLastName: true,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: false,
+  hasNoLastName: false,
+  hasNoble: false,
+  hasNoblePrefix: false,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
+
+module.exports = {
+  maleFirstNames,
+  femaleFirstNames,
+  lastNames,
+  lastNamesMalePrefix,
+  lastNamesFemalePrefix,
+  maleLastNames,
+  femaleLastNames,
+  regionSpecifics,
+};
+
+//last names bzw sippenname können vorkommen müssen aber nicht

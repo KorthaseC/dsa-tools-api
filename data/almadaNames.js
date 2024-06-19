@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Almaedo", "Almanzor(o)", "Alonso", "Alric(j)o", "Alr(ego)", "Amando", "Assavo", "Azulejo", "Baliabo", "Bartolo", 
   "Bathocar", "Bodar", "Boromeo", "Boronanthan", "Bornat", "Cahusac", "Caldaio(s)", "Camados", "Cazorlenyo", "Danilo", 
@@ -10,6 +11,7 @@ const maleFirstNames = [
   "Vencelao", "Viento", "Volapio", "Yaberto", "Yalach", "Yanturio", "Yelador", "Zahir", "Zayano", "Zelsono"
 ];
 
+//prettier-ignore
 const femaleFirstNames = [
   "Ahumeda", "Aldea", "Aldonza", "Almadea", "Amaria", "Antara", "Azila", "Baraya", "Bellamara", "Boronya", "Caldaya", 
   "Caldja", "Caneya", "Concabella", "Corvara", "Daroca", "Debona", "Doloresa", "Dunyaca", "Elae", "Emilgia", "Escalada", 
@@ -22,6 +24,7 @@ const femaleFirstNames = [
   "Zarpa(da)", "Zaya", "Zefira", "Zorilla"
 ];
 
+//prettier-ignore
 const lastNames = [
   "Aldubher", "Assiref", "Ballurat", "Branthoed", "Brannthagen", "Blaemendal", "Bolongaro", "Castanyeda", 
   "Cavazaro", "Contador", "Cronbieger", "Dallenstein", "Degenhardt", "Dischzaer", "Fettenhern", "Frostwurm", 
@@ -31,6 +34,7 @@ const lastNames = [
   "Trapani", "Valdepenya", "Vascagni", "Zulhamidez", "Zurraiga"
 ];
 
+//prettier-ignore
 const nobleNames = [
   "Abundil", "Agum", "Amazetti", "Alcorta", "Al'Faran", "Al'Kasim", "Al'Shirasgan", "Berg ä. H.", "Bleichenwang", 
   "Braast", "Cavazaro", "Culming", "d'Artésa", "Ernathesa", "Eschgeir", "Franfeld", "Hammamund", "Jurios", 
@@ -38,4 +42,34 @@ const nobleNames = [
   "Streitzig ä. H.", "Taladur ä. H.", "da Vanya", "Viryamun", "Zalfor"
 ];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames };
+//prettier-ignore
+const epithetsMale = [
+  "Punino", "Ragathio", "Amado", "Ascario", "Desidero", "Donat(he)o", 
+  "Glaciano", "Gracioso", "Hilado", "Honorio", "Leovigild", "Madajuelo", 
+  "Maldonado", "Merito", "Misterio", "Phessario", "Promeso", "Valeroso", 
+  "Viglio", "Violante", "Zonzo"
+];
+
+//prettier-ignore
+const epithetsFemale = [
+  "Punina", "Ragathia", "Amada", "Ascaria", "Desidera", "Donat(he)a", 
+  "Glaciana", "Graciosa", "Hilada", "Honora", "Leovigilda", "Madajuela", 
+  "Maldonada", "Merita", "Misteria", "Phessaria", "Promesa", "Valerosa", 
+  "Viglia", "Violanta", "Zonza"
+];
+
+const regionSpecifics = {
+  hasGenderSpecificLastName: false,
+  hasEpithet: true,
+  hasGenderSpecificEpithe: true,
+  hasNoLastName: false,
+  hasNoble: true,
+  hasNoblePrefix: false,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
+
+module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames, epithetsMale, epithetsFemale, regionSpecifics };
+
+//können zweitnamen bzw. epithet haben müssen aber nicht diese stehen zwischen vor und nachnamen

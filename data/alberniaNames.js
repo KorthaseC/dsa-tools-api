@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Aedan", "Aedin", "Aelfwin", "Aneirin", "Anrai", "Ardan", "Ardis", "Banthol", "Belfion", "Bennwir", "Bervyn", 
   "Bran(win)", "Brendan", "Callan", "Cathal", "Caye", "Cet(hern)", "Cian", "Cidris", "Conlai", "Conn(ar)", "Coran", 
@@ -10,6 +11,7 @@ const maleFirstNames = [
   "Targuin", "Tiradil", "Travien", "Toras", "Tsael", "Uachdaan", "Uallach", "Yan", "Ywain", "Yurris"
 ];
 
+//prettier-ignore
 const femaleFirstNames = [
   "Aedha", "Aedith", "Aedre", "Aife", "Ailill", "Ailbhe", "An(g)wen", "Baerewn", "Bether", "Branwen", "Brianna", 
   "Cailin", "Cailiniss", "Cell", "Clanra", "Ceridwen", "Cordalena", "Cuana", "Cuib", "Deane", "Daire", "Danu", 
@@ -22,6 +24,7 @@ const femaleFirstNames = [
   "Ruthe", "Sainlga", "Saendren", "Shaewen"
 ];
 
+//prettier-ignore
 const lastNames = [
   "Aendruw", "Aranol", "Arberdan", "Baemhold", "Braealgnan", "Bruadhfir", "Caelman", "Gollen", "Cuiffinn", "Engstrand", 
   "Faic", "Fidian", "Gaere", "Gathris", "Gorbas", "Gwenlian", "Hollbeerar", "Inveric", "Kerkill", "Kevendoch", "Kurstan", 
@@ -29,10 +32,23 @@ const lastNames = [
   "Vialaigh", "Wolter"
 ];
 
+//prettier-ignore
 const nobleNames = [
-  "Arodon", "Crumold", "Fenwasian", "Herlogan", "Nirianse", "Sanin", "Stepahan", "Taladan", "ui(ui/ni) Bennain", 
-  "ui(ui/ni) Conchobair", "ui(ui/ni) Llud", "ui(ui/ni) Niamad (Flussleute)", "Albenhult", "Aldewen", "Eryn", 
+  "Arodon", "Crumold", "Fenwasian", "Herlogan", "Nirianse", "Sanin", "Stepahan", "Taladan", "(ui/ni) Bennain", 
+  "(ui/ni) Conchobair", "(ui/ni) Llud", "(ui/ni) Niamad (Flussleute)", "Albenhult", "Aldewen", "Eryn", 
   "Farnwart", "Fingorn", "Galahan", "Helman (jüngere Adelsfamilien)"
 ];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames };
+const regionSpecifics = {
+  hasGenderSpecificLastName: false,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: false,
+  hasNoLastName: false,
+  hasNoble: true,
+  hasNoblePrefix: false,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
+
+module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames, regionSpecifics };

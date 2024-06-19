@@ -7,7 +7,7 @@ const files = fs.readdirSync(dataDirectory);
 const namesData = {};
 
 files.forEach(file => {
-    if (file !== 'namesData.js' && file !== 'names.js' && file.endsWith('.js')) {
+    if (file !== 'namesData.js' && file.endsWith('.js')) {
         const filePath = path.join(dataDirectory, file);
         const moduleName = path.basename(file, '.js');
         namesData[moduleName] = require(filePath);

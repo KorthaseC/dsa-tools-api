@@ -1,12 +1,15 @@
-const gladiatorenMaleFirstNames = [
+//prettier-ignore
+const maleFirstNames = [
   "Baltrunos", "Blutbart", "Boroniades", "Boronson", "Coragon", "Khald", "Korreno", "Meiglbar", "Omar", "Spektakulos", 
   "Takate", "Tridon", "Utharion", "Viktor"
 ];
 
-const gladiatorenFemaleFirstNames = [
+//prettier-ignore
+const femaleFirstNames = [
   "Arva", "Azila", "Barbaria", "Boron(a)ike", "Korianna", "Taka-He", "Venenia", "Victoria", "Zylva"
 ];
 
+//prettier-ignore
 const lastNames = [
   "al'Kira", "al'Sayif", "al'Zuul", "der Angroscho", "die Bestie", "Blutbart", "Blutsäufer", "der Barbar", "der Basilisk", 
   "der Berg", "Dreizack", "die Echse", "Elfenhandschuh", "Eisherz", "die Flinke", "die Geißel", "der Geisterrufer", 
@@ -16,8 +19,21 @@ const lastNames = [
   "Wildfang", "Zwergentot"
 ];
 
-module.exports = { 
-  gladiatorenMaleFirstNames, 
-  gladiatorenFemaleFirstNames, 
-  lastNames, 
+const regionSpecifics = {
+  hasGenderSpecificLastName: false,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: false,
+  hasNoLastName: false,
+  hasNoble: false,
+  hasNoblePrefix: false,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
+
+module.exports = {
+  maleFirstNames,
+  femaleFirstNames,
+  lastNames,
+  regionSpecifics,
 };

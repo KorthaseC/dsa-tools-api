@@ -1,5 +1,5 @@
 const express = require('express');
-const { generateNames } = require('./data/names');
+const { generateNames } = require('./name-generator/names');
 
 const app = express();
 const port = 3000;
@@ -22,5 +22,5 @@ app.post('/generate-names', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at ${port}`);
 });

@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Aldec", "Angold", "Answim", "Branabas", "Branibart", "Emmeran", "Fürchtprenas", "Garamold", "Gerbald", "Golbur", 
   "Goldwart", "Greiffried", "Greifwin", "Guildam", "Huldrich", "Lancorian", "Marachin", "Philopraios", "Praiborett", 
@@ -5,6 +6,7 @@ const maleFirstNames = [
   "Uriens", "Wahrfried", "Wulfram"
 ];
 
+//prettier-ignore
 const femaleFirstNames = [
   "Argolda", "Belfgira", "Braingolde", "Branike", "Daradia", "Gertraudis", "Goldane", "Goldara", "Greifwina", 
   "Griffa(ne)", "Griffgerga", "Heiltraudis", "Herrgriffa", "Irmenela", "Irnfride", "Misira", "Praaidne", 
@@ -12,12 +14,14 @@ const femaleFirstNames = [
   "Treugunde", "Ucuri(e)ke", "Yadwiga", "Ygolde", "Wiltrud"
 ];
 
+//prettier-ignore
 const lastNames = [
   "Altenauer", "Auerbach", "Auermund", "Breitenauer", "Breitner", "Dergeler", "Eslamsordener", "Gintzspiel", 
   "Goldenbacher", "Greifenfurter", "Greifentreu", "Kohlbauer", "Lichtgange", "Pausbäcker", "Praiosberger", 
   "Orkschläger", "Sonnenschauer", "Steinschläger", "Webner", "Weißbleichner"
 ];
 
+//prettier-ignore
 const nobleNames = [
   "Ährenstein", "Altamredesfeld", "Angenforst", "Auerfelde", "Beldenhag", "Bogenbühl", "Bergelstein", "Dunkelfelde", 
   "Dunkelsfarn", "Eisslingern", "Feldharsch", "Finsterforst", "Finsterkamm", "Finsterrode", "Gattenstein", 
@@ -26,4 +30,16 @@ const nobleNames = [
   "Wolfenhain"
 ];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames };
+const regionSpecifics = {
+  hasGenderSpecificLastName: false,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: false,
+  hasNoLastName: false,
+  hasNoble: true,
+  hasNoblePrefix: false,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
+
+module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames, regionSpecifics };

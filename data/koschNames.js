@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Al(e)rich", "Alphak", "Ambros", "Angbart", "Angwart", "Angfold", "Anshold", "Arbel", "Ardan", "Ardo", "Baduar", 
   "Balinor", "Bardo", "Belch", "Bemdrich", "Berwin", "Binsbart", "Blasius", "Bogumil (Bomil)", "Bolzer", "Bork", 
@@ -11,6 +12,7 @@ const maleFirstNames = [
   "Tradan", "Trest", "Ulfrig", "Ulferd", "Ulmane", "Valpo", "Vilus (Vittel)", "Wengel", "Wilbur", "Wilfrig", "Wolhardt"
 ];
 
+//prettier-ignore
 const femaleFirstNames = [
   "Algarte", "Alma", "Alvide", "Anglinde", "Angunde", "Bachdee", "Balbine", "Barine", "Birsel", "Belisa", "Boltsa", 
   "Celissa (Cella)", "Dordie", "Elida", "Firuna", "Gidiane", "Gunelde", "Hamwede (die Hamme oder Wiede)", "Harika", 
@@ -21,6 +23,7 @@ const femaleFirstNames = [
   "Vanda", "Vieska", "Wina", "Wielanda (Nelda)", "Zelka"
 ];
 
+//prettier-ignore
 const lastNames = [
   "Ackernheck", "Algerein", "Alrauninger", "Altschuh", "Apfelbrandt", "Apfelstrunk", "Ballender", "Beinheer", 
   "Binsbeuch", "Bierboch", "Bockfold", "Bößbold", "Buchenschlage", "Diegeler", "Dinkelkorn", "Dumpforcht", 
@@ -30,6 +33,7 @@ const lastNames = [
   "Zwinnrusch"
 ];
 
+//prettier-ignore
 const nobleNames = [
   "Angenfurt", "Angwartshof", "Appelauen", "Auersbruk", "Auerstfurt", "Bärenklamm", "Bardostein", "Birkbosch", 
   "Borkling", "Dunkelsfort", "Eberstamm", "Falkenhag", "Garnelhaul", "Herbonia", "Koschfurt", "Koschtal", 
@@ -37,4 +41,16 @@ const nobleNames = [
   "Steinhag", "Stippwitz", "Ustrutz", "Wengenholm"
 ];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames };
+const regionSpecifics = {
+  hasGenderSpecificLastName: false,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: false,
+  hasNoLastName: false,
+  hasNoble: true,
+  hasNoblePrefix: false,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
+
+module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames, regionSpecifics };

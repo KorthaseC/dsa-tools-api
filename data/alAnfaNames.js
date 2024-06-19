@@ -1,3 +1,4 @@
+//prettier-ignore
 const maleFirstNames = [
   "Adario", "Agusto", "Alondro", "Alriego", "Alveron", "Amato", "Amir", "Amirato", "Apreno", "Armado", "Assanto",
   "Boromeo", "Cascador", "Calmano", "Coragon", "Corvo", "Damiano", "Deredan", "Desiderio", "Diago", "Diamantes",
@@ -10,6 +11,8 @@ const maleFirstNames = [
   "Superbo", "Tarquinio", "Thiago", "Tirato", "Trienco", "Tito", "Ulan", "Unnio", "Vareno", "Vessario",
   "Vitario", "Vito", "Vittorio", "Wilciano", "Xenofero", "Yorge", "Yuan", "Zurbaran"
 ];
+
+//prettier-ignore
 const femaleFirstNames = [
   "Adaque", "Alara", "Amira", "Avessandra", "Balatravis", "Baniatella", "Blanca", "Boronaya",
   "Calmora", "Carimina", "Cessandra", "Cessaria", "Consuela", "Cortessa", "Corvinida",
@@ -24,6 +27,8 @@ const femaleFirstNames = [
   "Ursania", "Vadoria", "Valerfa", "Varinella", "Velvenya", "Vida", "Violanda", "Xantilia",
   "Ximena", "Yvonya", "Zalines", "Zephirina", "Zeradia"
 ];
+
+//prettier-ignore
 const lastNames = [
   "Acostez", "Albahir", "Almanzar", "Alvarez",
   "Anthos", "Arragenos", "Barrera", "Belafloros", "Beratas", "Boronez", "Botero", "Brabaker", "Casarez", "Charazzar", "Comitez",
@@ -34,6 +39,20 @@ const lastNames = [
   "Sylvaron", "Tannspitz", "Tiamartin", "Treufreund", "Uludaz", "Zaldahan"
 ];
 
-const nobleNames = [];
+const noblePrefix = ["von ", "von und zu ", "zum ", "da ", "di ", "da ", "ya "];
 
-module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames };
+const nobleNames = lastNames;
+
+const regionSpecifics = {
+  hasGenderSpecificLastName: false,
+  hasEpithet: false,
+  hasGenderSpecificEpithe: false,
+  hasNoLastName: false,
+  hasNoble: true,
+  hasNoblePrefix: true,
+  hasNobleFirstNames: false,
+  hasMultiFirstNames: false,
+  hasClanNames: false,
+};
+
+module.exports = { maleFirstNames, femaleFirstNames, lastNames, nobleNames, noblePrefix, regionSpecifics };
