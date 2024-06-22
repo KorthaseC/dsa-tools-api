@@ -62,7 +62,7 @@ const nobleFemaleFirstNames = [
 ];
 
 //prettier-ignore
-const nobleLastNames = [
+const nobleNames = [
   "Aarburg", "Bärenau", "vom Berg", "Brachental", "Dornensee", "Dunkelschlund", "Ehrenstein", "Eisensteyn", "Erlenstamm", 
   "Falkenstein", "Fronforst", "Gareth", "Goldweiler", "Greyfenstein", "Hartsteen", "Hirschfurten", "Hohenholz", 
   "Leuenberg", "Leuenfeld(e)", "Lichtenberg", "Löwent(h)al", "Luring", "Orkenschild", "Quintian-Quandt", "Rabenmund", 
@@ -99,7 +99,7 @@ module.exports = {
   lastNames,
   nobleMaleFirstNames,
   nobleFemaleFirstNames,
-  nobleLastNames,
+  nobleNames,
   epithetsMale,
   epithetsFemale,
   regionSpecifics,
