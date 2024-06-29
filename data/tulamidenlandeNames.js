@@ -52,8 +52,6 @@ const epithets = [
   "el'Schaddai", "el'Zitagi", "umm'el Kachelaq"
 ];
 
-const lastNamesNovadi = femaleFirstNames.map((name) => "bint el'" + name);
-
 const maleLastNames = maleFirstNames;
 
 const femaleLastNames = maleFirstNames;
@@ -87,7 +85,3 @@ module.exports = {
   lastNamesFemaleSuffix,
   regionSpecifics,
 };
-
-//prefix und suffix wird für den nachnamen verwendet dies ist meist der name vom Vater aus bei den novadi dort wird der mutter name verwendet und ein anderer prefix
-
-// beinamen sind kompliziert weil die überall stehen können und auch zB den vornamen ersetzen können

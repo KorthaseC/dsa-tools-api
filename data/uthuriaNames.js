@@ -1,7 +1,7 @@
 //prettier-ignore
 const maleFirstNames = [
-  "Anajo", "Altarax", "Bal’Inda", "Catlaxo", "Haruon", "Honoran", "Jokom", "Kalimba", "Kayulf", "Matlaco", 
-  "Merxaros", "Odumbar(o)", "Osarax", "Rayatico", "Sar’Zuko", "Sukatron", "Tarax", "Xatico", "Zokopac"
+  "Anajo", "Altarax", "Bal'Inda", "Catlaxo", "Haruon", "Honoran", "Jokom", "Kalimba", "Kayulf", "Matlaco", 
+  "Merxaros", "Odumbar(o)", "Osarax", "Rayatico", "Sar'Zuko", "Sukatron", "Tarax", "Xatico", "Zokopac"
 ];
 
 //prettier-ignore
