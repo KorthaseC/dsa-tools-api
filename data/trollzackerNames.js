@@ -39,6 +39,6 @@ const regionSpecifics = {
   hasClanNames: true,
 };
 
-module.exports = { maleFirstNames, femaleFirstNames, epithetsMale, epithetsFemale, regionSpecifics };
+module.exports = { maleFirstNames, femaleFirstNames, epithetsMale, epithetsFemale, clanNames, regionSpecifics };
 
 //es können clan namen angehängt werden und oft werden beinamen als nachnamen verwendet
