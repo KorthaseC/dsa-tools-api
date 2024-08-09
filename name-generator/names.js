@@ -1,4 +1,4 @@
-const namesData = require("../data/namesData");
+const namesData = require("../data/nameData/namesData");
 
 function getRandomElement(arr) {
   if (!Array.isArray(arr) || arr.length === 0) {
