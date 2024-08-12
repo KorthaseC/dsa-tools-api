@@ -63,12 +63,12 @@ const regionSpecifics = {
 
 module.exports = {
   maleFirstNames,
+  femaleFirstNames,
   lastNamesMaleSuffix,
   lastNamesFemaleSuffix,
+  lastNames,
   maleLastNames,
   femaleLastNames,
   epithets,
   regionSpecifics,
 };
-
-//gilt für Amboss-, Erz- und Brillantzwerge
