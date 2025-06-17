@@ -1,0 +1,147 @@
+{
+  "name": "tjalva",
+  "race": "human",
+  "culture": "thorwaler",
+  "profession": "warrior",
+  "experienceLevel": "Experienced",
+  "attributes": {
+    "courage": 14,
+    "sagacity": 10,
+    "intuition": 14,
+    "charisma": 11,
+    "dexterity": 10,
+    "agility": 12,
+    "constitution": 14,
+    "strength": 15,
+    "lifePoints": 33,
+    "lifePointsMax": 33,
+    "astralPoints": 0,
+    "astralPointsMax": 0,
+    "spirit": 1,
+    "toughness": 3,
+    "dodge": 6,
+    "movement": 8,
+    "initiative": "13+1D6",
+    "fatePoints": 3,
+    "fatePointsMax": 3
+  },
+  "advantages": ["increasedToughness"],
+  "disadvantages": ["negativeTraitSuperstitionCuriosity"],
+  "specialAbilities": {
+    "combat": ["forcefulBlowI", "shieldSplitter"],
+    "general": ["areaKnowledgeOlport", "inuredToEncumbranceI"],
+    "magic": []
+  },
+  "languages": [{ "label": "garethi", "lvl": 3 }, { "label": "thorwalsch", "lvl": 3 }, { "label": "kuslikerSigns" }],
+  "combatTechniques": {
+    "crossbows": { "at": 6 },
+    "bows": { "at": 6 },
+    "daggers": { "at": 8, "pa": 4 },
+    "fencingWeapons": { "at": 8, "pa": 4 },
+    "impactWeapons": { "at": 14, "pa": 8 },
+    "chainWeapons": { "at": 8 },
+    "lances": { "at": 8, "pa": 5 },
+    "brawling": { "at": 14, "pa": 8 },
+    "shields": { "at": 12, "pa": 7 },
+    "swords": { "at": 12, "pa": 7 },
+    "polearms": { "at": 8, "pa": 5 },
+    "throwingWeapons": { "at": 10 },
+    "twoHandedImpactWeapons": { "at": 12, "pa": 7 },
+    "twoHandedSwords": { "at": 8, "pa": 5 }
+  },
+  "skills": {
+    "physical": [
+      { "name": "flying", "probe": ["courage", "agility", "strength"], "value": 0 },
+      { "name": "gaukelei", "probe": ["courage", "charisma", "dexterity"], "value": 0 },
+      { "name": "climbing", "probe": ["courage", "agility", "strength"], "value": 2 },
+      { "name": "bodyControl", "probe": ["agility", "agility", "constitution"], "value": 5 },
+      { "name": "featOfStrength", "probe": ["constitution", "strength", "strength"], "value": 7 },
+      { "name": "riding", "probe": ["charisma", "agility", "constitution"], "value": 0 },
+      { "name": "swimming", "probe": ["constitution", "agility", "strength"], "value": 5 },
+      { "name": "selfControl", "probe": ["courage", "courage", "constitution"], "value": 4 },
+      { "name": "singing", "probe": ["sagacity", "charisma", "constitution"], "value": 0 },
+      { "name": "perception", "probe": ["sagacity", "intuition", "intuition"], "value": 3 },
+      { "name": "dancing", "probe": ["sagacity", "charisma", "dexterity"], "value": 0 },
+      { "name": "pickpocketing", "probe": ["courage", "agility", "dexterity"], "value": 0 },
+      { "name": "stealth", "probe": ["courage", "intuition", "dexterity"], "value": 0 },
+      { "name": "carousing", "probe": ["sagacity", "constitution", "strength"], "value": 4 }
+    ],
+    "social": [
+      { "name": "persuasion", "probe": ["courage", "sagacity", "charisma"], "value": 0 },
+      { "name": "seduction", "probe": ["courage", "charisma", "charisma"], "value": 0 },
+      { "name": "intimidation", "probe": ["courage", "intuition", "charisma"], "value": 6 },
+      { "name": "etiquette", "probe": ["sagacity", "intuition", "charisma"], "value": 2 },
+      { "name": "streetwise", "probe": ["sagacity", "intuition", "charisma"], "value": 2 },
+      { "name": "empathy", "probe": ["sagacity", "intuition", "charisma"], "value": 5 },
+      { "name": "fastTalk", "probe": ["courage", "intuition", "charisma"], "value": 2 },
+      { "name": "disguise", "probe": ["intuition", "charisma", "agility"], "value": 2 },
+      { "name": "willpower", "probe": ["courage", "intuition", "charisma"], "value": 5 }
+    ],
+    "nature": [
+      { "name": "tracking", "probe": ["courage", "intuition", "agility"], "value": 2 },
+      { "name": "ropes", "probe": ["sagacity", "dexterity", "strength"], "value": 3 },
+      { "name": "fishing", "probe": ["dexterity", "agility", "constitution"], "value": 3 },
+      { "name": "orienting", "probe": ["sagacity", "intuition", "intuition"], "value": 5 },
+      { "name": "plantLore", "probe": ["sagacity", "dexterity", "constitution"], "value": 2 },
+      { "name": "animalLore", "probe": ["courage", "courage", "charisma"], "value": 2 },
+      { "name": "survival", "probe": ["courage", "agility", "constitution"], "value": 3 }
+    ],
+    "knowledge": [
+      { "name": "gambling", "probe": ["sagacity", "sagacity", "intuition"], "value": 4 },
+      { "name": "geography", "probe": ["sagacity", "sagacity", "intuition"], "value": 2 },
+      { "name": "history", "probe": ["sagacity", "sagacity", "intuition"], "value": 2 },
+      { "name": "religions", "probe": ["sagacity", "sagacity", "intuition"], "value": 4 },
+      { "name": "warcraft", "probe": ["courage", "sagacity", "intuition"], "value": 4 },
+      { "name": "magicalLore", "probe": ["sagacity", "sagacity", "intuition"], "value": 1 },
+      { "name": "mechanics", "probe": ["sagacity", "sagacity", "dexterity"], "value": 2 },
+      { "name": "math", "probe": ["sagacity", "sagacity", "intuition"], "value": 2 },
+      { "name": "law", "probe": ["sagacity", "sagacity", "intuition"], "value": 3 },
+      { "name": "mythsAndLegends", "probe": ["sagacity", "sagacity", "intuition"], "value": 5 },
+      { "name": "sphereLore", "probe": ["sagacity", "sagacity", "intuition"], "value": 0 },
+      { "name": "stars", "probe": ["sagacity", "sagacity", "intuition"], "value": 2 }
+    ],
+    "crafts": [
+      { "name": "alchemy", "probe": ["courage", "sagacity", "dexterity"], "value": 0 },
+      { "name": "sailing", "probe": ["dexterity", "agility", "strength"], "value": 4 },
+      { "name": "vehicles", "probe": ["charisma", "dexterity", "constitution"], "value": 0 },
+      { "name": "commerce", "probe": ["sagacity", "intuition", "charisma"], "value": 2 },
+      { "name": "treatPoison", "probe": ["courage", "sagacity", "intuition"], "value": 0 },
+      { "name": "treatDisease", "probe": ["courage", "intuition", "constitution"], "value": 0 },
+      { "name": "treatSoul", "probe": ["intuition", "charisma", "constitution"], "value": 0 },
+      { "name": "treatWounds", "probe": ["sagacity", "dexterity", "dexterity"], "value": 2 },
+      { "name": "woodworking", "probe": ["dexterity", "agility", "strength"], "value": 0 },
+      { "name": "foodPreparation", "probe": ["intuition", "dexterity", "dexterity"], "value": 0 },
+      { "name": "leatherworking", "probe": ["dexterity", "agility", "constitution"], "value": 0 },
+      { "name": "artisticAbility", "probe": ["intuition", "dexterity", "strength"], "value": 0 },
+      { "name": "metalworking", "probe": ["dexterity", "constitution", "constitution"], "value": 0 },
+      { "name": "music", "probe": ["charisma", "dexterity", "constitution"], "value": 0 },
+      { "name": "pickLocks", "probe": ["intuition", "dexterity", "dexterity"], "value": 0 },
+      { "name": "stoneworking", "probe": ["dexterity", "dexterity", "strength"], "value": 0 },
+      { "name": "textileCraft", "probe": ["sagacity", "dexterity", "dexterity"], "value": 0 }
+    ]
+  },
+  "magic": [],
+  "equipment": {
+    "closeCombat": [
+      { "weapon": "orcNoseAx", "group": "impactWeapons", "at": 13, "pa": 6, "dp": "1D6+6" },
+      { "weapon": "thorwalerShield", "group": "shields", "at": 7, "pa": 11, "dp": "1D6+1" }
+    ],
+    "rangeCombat": [],
+    "armor": [
+      {
+        "label": "leatherArmor",
+        "protection": 3,
+        "burden": 0
+      }
+    ],
+    "generell": [{ "name": "simpleClothes", "quantity": 1 }]
+  },
+  "currency": {
+    "ducats": 0,
+    "silverthalers": 12,
+    "haler": 0,
+    "kreutzer": 0
+  },
+  "notes": "",
+  "accessList": []
+}
