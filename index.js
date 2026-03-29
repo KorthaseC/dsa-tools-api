@@ -6,7 +6,11 @@ const { generateBooks } = require("./book-generator/books");
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://dsa-tools.de", "https://www.dsa-tools.de"],
+  }),
+);
 app.use(express.json());
 
 app.post("/generate-names", (req, res) => {
